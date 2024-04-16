@@ -1,11 +1,11 @@
-import { Navigate } from "react-router-dom"
+import { Navigate } from "react-router-dom";
 
-function ProtectedRotes(children,user) {
-    if(user) {
-        return children
-    } else {
-        return <Navigate to="./signin"/>
-    }
+function ProtectedRotes({ children, user }) {
+  if (user) {
+    return children;
+  } else {
+    return <Navigate to="signup" />;
+  }
 }
 
-export default ProtectedRotes
+export default ProtectedRotes;
