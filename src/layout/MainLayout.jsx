@@ -1,9 +1,13 @@
 import { Outlet } from "react-router-dom"
+import Navbar from "../components/Navbar"
+import ThemeContainer from "../components/ThemeContainer"
 
 function MainLayout() {
   return (
     <>
-    <main>
+    <Navbar/>
+    <ThemeContainer/>
+    <main className="align-el">
         <Outlet/>
     </main>
     </>
